@@ -15,7 +15,7 @@ const TranscriptionApp = () => {
       const newMediaRecorder = new MediaRecorder(stream, { mimeType: "audio/webm" });
       const newSocket = new WebSocket("wss://api.deepgram.com/v1/listen", [
         "token",
-        process.env.DEEPGRAM_KEY,
+        "34620a80cc55c37b99cb7b19a15f698bd81aaf9a",
       ]);
 
       setMediaRecorder(newMediaRecorder);
